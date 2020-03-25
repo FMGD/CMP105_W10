@@ -6,6 +6,8 @@ Level::Level(sf::RenderWindow* hwnd, Input* in)
 	input = in;
 
 	// initialise game objects
+	mario_level1_.setWindow(hwnd);
+
 
 }
 
@@ -30,7 +32,7 @@ void Level::update(float dt)
 void Level::render()
 {
 	beginDraw();
-
+	mario_level1_.render();
 	endDraw();
 }
 

@@ -2,6 +2,7 @@
 
 #include <SFML/Graphics.hpp>
 #include "Framework/Input.h"
+#include "MarioLevel1.h"
 #include <string>
 #include <iostream>
 
@@ -23,4 +24,7 @@ private:
 	// Default variables for level class.
 	sf::RenderWindow* window;
 	Input* input;
+
+	// Title Map
+	MarioLevel1 mario_level1_;
 };
