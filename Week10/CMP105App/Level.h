@@ -2,7 +2,8 @@
 
 #include <SFML/Graphics.hpp>
 #include "Framework/Input.h"
-#include "MarioLevel1.h"
+#include "TileManager.h"
+#include "PlayerManager.h"
 #include <string>
 #include <iostream>
 
@@ -25,6 +26,7 @@ private:
 	sf::RenderWindow* window;
 	Input* input;
 
-	// Title Map
-	MarioLevel1 mario_level1_;
+	//	Managers
+	TileManager tile_manager_;
+	PlayerManager player_manager_;
 };

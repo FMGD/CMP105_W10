@@ -1,20 +1,21 @@
 #pragma once
 #include "Framework/TileMap.h"
+#include "Framework/Collision.h"
 
-class MarioLevel1
+class TileManager
 {
 	public:
-		MarioLevel1();
-		~MarioLevel1();
+		TileManager();
+		~TileManager();
 		void setWindow(sf::RenderWindow* hwnd);
 		void render();
+		void checkCollision(GameObject& game_object);
+		void creatingTileMap(int map_code);
 
 	private:
 		TileMap tile_map_;
 		sf::RenderWindow* window_;
 		void creatingTileSet();
-		void creatingTileMap();
-
 	
 };
 
