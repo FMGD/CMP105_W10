@@ -12,6 +12,7 @@ private:
 	sf::Vector2f gravity_;
 	sf::Vector2f jump_vector_;
 	bool is_jumping_;
+	bool is_ducking_;
 
 	Animation walk_;
 	Animation swim_;

@@ -11,8 +11,11 @@ class PlayerManager
 
 private:
 	Player player_;
+	sf::RectangleShape collision_box_player_shape_;
 	sf::Vector2f spawn_point_;
 	sf::Texture texture_;
+	void updateCollisionBoxShape();
+
 
 
 public:
